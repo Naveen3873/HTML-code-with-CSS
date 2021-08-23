@@ -1,0 +1,179 @@
+body{
+    background-image: url(stulog3.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%   ;
+    background-position: center center;
+    background-color: transparent;
+    
+}
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table{
+    background-color: transparent;   
+}
+td{
+    background-color: transparent;
+}
+h1{
+    color: #483d8b;
+}
+h2{
+    width: 50%;
+    border-width: thin;
+    border-style: solid;
+    border-color: #A0522D;
+    padding-left: 30px;
+    background-color: #6495ed;
+    box-shadow: 5px 5px #666666;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: white;
+    color: #6495ed;
+    cursor: pointer;
+    font-size:110%;
+}
+a:active{
+    color:aqua;
+}
+
+h3{
+    color: #483d8b;
+    text-align: center;
+    font-size: x-large;
+}
+
+.stulogin a{
+    color: #f0ffff;
+    font-size: bolder;
+}
+.stulogin a:hover{
+    background-color: white;
+    color: #6495ed;
+    cursor: pointer;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+  }
+a:before{
+    background-color: #EEE8AA;
+    border-radius: 20%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+}
+a:focus {
+outline: 0;
+color: #fff;
+}
+a:focus:before{
+-webkit-animation: Click_Effect 0.8s ease-out;
+        animation: Click_Effect 0.8s ease-out;
+}
+@-webkit-keyframes Click_Effect {
+50%{
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+}
+99%{
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+}
+100%{
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+}
+}
+@keyframes Click_Effect{
+50%{
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+}
+99%{
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+}
+100%{
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+}
+}
+
+h1,h3,a{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein{
+from{
+    margin-left: 100%;
+    width: 300%;
+}
+to{
+    margin-left: 0%;
+    width: 100%;
+}
+}
+
+@keyframes mymove{
+  0%   {right: 25px;}
+  25%  {right: 50px;}
+  75%  {right: 100px}
+  100% {right: 0px;}
+}
+.balog a{
+    animation: mymove 3s;
+}
+
+input[type=text],textarea,select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit],input[type=reset]{
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    font-size: large;
+}
+input[type=reset]:hover{
+    font-size: large;
+}

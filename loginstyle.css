@@ -1,0 +1,183 @@
+body{
+    background-image: url("log6.gif");
+}
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size:110%;
+}
+a:active{
+    color:aqua;
+}
+table{
+    background-color: transparent;   
+}
+td{
+    background-color: transparent;
+}
+h1{
+    color: white;
+}
+h2{
+    width: 50%;
+    border-width: thin;
+    border-style: solid;
+    border-color: white;
+    padding-left: 30px;
+    background-color: #dddddd;
+}
+td{
+    color: white;
+}
+
+
+h3{
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+#admlog{
+    
+    padding: 5%;
+    background-image: url(login.jpg);
+    background-repeat: no-repeat;
+    background-size:80%;
+    background-position: center;
+}
+#usernmae{
+    font-weight: bolder;
+    text-align: center;
+}
+#usps{
+    padding-left: 2%;
+    
+}
+#adlogin{
+    padding-left: -5px;
+    padding-bottom: 1%;
+}
+#button{
+    background-color: #4682B4;
+}
+#reset{
+    background-color: #4682B4;
+    color: white;
+}
+
+.btn{
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  
+.btn:hover{
+background-color: #3e8e41;
+color: white;
+}
+
+a{
+position: relative;
+display: inline-block;
+cursor: pointer;
+margin: 0 auto;
+width: auto;
+height: auto;
+font-size: 20px;
+transition: all 0.4s ease-in;
+}
+a:before{
+    background-color: #EEE8AA;
+    border-radius: 20%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+}
+a:focus {
+outline: 0;
+color: #fff;
+}
+a:focus:before{
+-webkit-animation: Click_Effect 0.8s ease-out;
+        animation: Click_Effect 0.8s ease-out;
+}
+@-webkit-keyframes Click_Effect {
+50%{
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+}
+99%{
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+}
+100%{
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+}
+}
+@keyframes Click_Effect{
+50%{
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+}
+99%{
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+}
+100%{
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+}
+}
+
+h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-right: 100%;
+      width: 300%;
+    }
+  
+    75% {
+      font-size: 300%;
+      margin-right: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+
+.loginrad{
+    
+}

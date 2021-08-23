@@ -1,0 +1,88 @@
+body{
+    background-image: url(home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: transparent;
+    
+}
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+table{
+    background-color: transparent;   
+}
+td{
+    background-color: transparent;
+}
+h1{
+    color: black;
+}
+h2{
+    width: 50%;
+    border-width: thin;
+    border-style: solid;
+    border-color: #A0522D;
+    padding-left: 30px;
+    background-color: #C0C0C0;
+    box-shadow: 5px 5px #666666;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #1e90ff;
+    color: black;
+    cursor: pointer;
+    font-size:110%;
+
+}
+a:active{
+    color:white;
+}
+
+h3{
+    color: black;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bolder;
+}
+#adlogstvi{
+    background-image: url(admlogstvi.jpg);
+    padding: 3%;
+}
+button{
+    background-color: black;
+    padding: 5px;
+    border: white;
+    box-shadow: 2px 2px white;   
+    text-align:right;
+}
+
+#tab{
+    border-collapse: collapse;
+    color: black;
+    cursor: default;
+}
+#tab th{
+    background-color: #04AA6D;
+    color: white;
+}
+#tab td, #tab th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+#tab tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#tab tr:nth-child(odd){
+    background-color: white; 
+}
+#tab tr:hover{
+    background-color: #B0C4DE;
+}
+
+#balog a{
+    font: black;
+}

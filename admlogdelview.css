@@ -1,0 +1,120 @@
+body{
+    background-image: url(home3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    background-color: transparent;
+    
+}
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+table{
+    background-color: transparent;   
+}
+td{
+    background-color: transparent;
+}
+h1{
+    color: white;
+}
+h2{
+    width: 50%;
+    border-width: thin;
+    border-style: solid;
+    border-color: white;
+    padding-left: 30px;
+    background-color: #A0522D;
+    box-shadow: 5px 5px #666666;
+}
+h2{
+    width: 50%;
+    border-width: thin;
+    border-style: solid;
+    border-color: #A0522D;
+    padding-left: 30px;
+    background-color: #C0C0C0;
+    box-shadow: 5px 5px #666666;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #1e90ff;
+    color: black;
+    cursor: pointer;
+    font-size:110%;
+
+}
+a:active{
+    color:white;
+}
+
+h3{
+    color:white;
+    text-align: center;
+    font-size: x-large;
+}
+#delcl{
+    padding: 3%;
+    background-color: #ddd;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+  }
+a:before{
+    background-color: #EEE8AA;
+    border-radius: 20%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+}
+a:focus {
+outline: 0;
+color: #fff;
+}
+a:focus:before{
+-webkit-animation: Click_Effect 0.8s ease-out;
+        animation: Click_Effect 0.8s ease-out;
+}
+
+#delcl{
+    border-collapse: collapse;
+    color: black;
+    cursor: default;
+    text-align: center;
+}
+#delcl th{
+    background-color: #04AA6D;
+    color: white;
+}
+#delcl td, #delcl th {
+    border: 1px solid ##BC8F8F;
+    padding: 8px;
+  }
+#delcl tr:nth-child(even){
+    background-color: #BC8F8F;
+}
+#delcl tr:nth-child(odd){
+    background-color: A0522D;
+}
+#delcl tr:hover{
+    background-color: #708090;
+}
+#delcl a{
+    font:blue;
+}
