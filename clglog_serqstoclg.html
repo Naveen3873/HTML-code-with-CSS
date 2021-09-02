@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>C2C Learning System</title>
-        <link rel="stylesheet" href="D:\Naveen\Day 10\Project\stulogsereqtoclg.css" type="text/css">
+        <link rel="stylesheet" href="D:\Naveen\HTML-code-with-CSS\stulogsereqtoclg.css" type="text/css">
     </head>
     <body bgcolor="00FFC4">
         <table width="100%" bgcolor="E6F656">
@@ -16,9 +16,9 @@
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\home.html">Home</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\login.html">Login</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\register.html">Register</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\home.html">Home</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\login.html">Login</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\register.html">Register</a></h2></td>
                 <td><h2><a href="about">About Us</a></h2></td>
                 <td><h2><a href="contact">Contact Us</a></h2></td>
                 <td></td><td></td><td></td><td></td><td></td>
@@ -30,8 +30,8 @@
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td colspan="50"><a href="D:\Naveen\Day 10\Project\stulogin.html">back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="D:\Naveen\Day 10\Project\login.html">Logout</a></td>
+                <td colspan="50"><a href="D:\Naveen\HTML-code-with-CSS\stulogin.html">back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="D:\Naveen\HTML-code-with-CSS\login.html">Logout</a></td>
             </tr>
         </table>
 
@@ -41,16 +41,19 @@
             </tr>
         </table>
         
-        <form>
+        <form id="serq" name="serqt">
             <table width=25% align="center">
                 <tr>
                     <td><Label>Name</Label></td>
-                    <td><input type="text" id="name"></td>
+                    <td><input type="text" id="stname" name="stuname"></td>
                 </tr>
                 <tr>
-                    <td><label for="college">College</label></td>
+                    <td></td><td><p id="invname"></p></td>
+                </tr>
+                <tr>
+                    <td><label for="colleg">College</label></td>
                     <td><select name="college" id="college">
-                        <option></option>
+                        
                         <option value="american clg">The American College</option>
                         <option value="mdu clg">The Madura College</option>
                         <option value="kmu">The Kamarajar University</option>
@@ -62,15 +65,19 @@
                     <td><label for="rqstfr">Request for</label></td>
                     <td><textarea name="restfr" id="restfr" cols="25" rows="2"></textarea></td>
                 </tr>
+                <tr>
+                    <td></td><td><p id="invrq"></p></td>
+                </tr>
                 <tr></tr>
                 <tr></tr>
                 <tr></tr>
                 <tr>
                     <td></td>
-                    <td><input type="submit" value="submit" id="submit">&nbsp;&nbsp;&nbsp;
-                    <input type="submit" value="reset"></td>
+                    <td><input type="button" value="submit" id="submit" onclick="serqst()">&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="reset"></td>
                 </tr>
             </table>
         </form>
+        <script src="D:\Naveen\HTML-code-with-CSS\clglog_serqstoclg.js"></script>
     </body>
 </html>
