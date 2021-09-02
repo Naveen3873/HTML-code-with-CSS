@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>C2C Learning System</title>
-        <link rel="stylesheet" href="D:\Naveen\Day 10\Project\stuloguppro.css" type="text/css">
+        <link rel="stylesheet" href="D:\Naveen\HTML-code-with-CSS\stuloguppro.css" type="text/css">
     </head>
     <body class="main" bgcolor="00FFC4">
         <table width="100%" bgcolor="E6F656">
@@ -16,9 +16,9 @@
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\home.html">Home</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\login.html">Login</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\register.html">Register</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\home.html">Home</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\login.html">Login</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\register.html">Register</a></h2></td>
                 <td><h2><a href="about">About Us</a></h2></td>
                 <td><h2><a href="contact">Contact Us</a></h2></td>
                 <td></td><td></td><td></td><td></td><td></td>
@@ -30,8 +30,8 @@
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td colspan="50"><a href="D:\Naveen\Day 10\Project\stulogin.html">back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="D:\Naveen\Day 10\Project\login.html">Logout</a></td>
+                <td colspan="50"><a href="D:\Naveen\HTML-code-with-CSS\stulogin.html">back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="D:\Naveen\HTML-code-with-CSS\login.html">Logout</a></td>
             </tr>
         </table>
 
@@ -41,53 +41,77 @@
             </tr>
         </table>
         
-        <form>
+        <form id="stuppro" name="stuppro" autocomplete="off">
             <table  width=30% align="center">
                 <tr>
                     <td><label for="ftname">First Name</label></td>
                     <td></td>                    
-                    <td><input type="text" name="ftname" id="ftname"></td>
+                    <td><input type="text" name="ftname" id="ftname" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td><p id="invfna"></p></td>
                 </tr>
                 <tr>
                     <td><label for="lname">Last Name</label></td>
                     <td></td>                    
-                    <td><input type="text" name="lname" id="lname"></td>
+                    <td><input type="text" name="lname" id="lname" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td><p id="invlna"></p></td>
                 </tr>
                 <tr>
                     <td><label for="usname">User Name</label></td>
                     <td></td>                    
-                    <td><input type="text" name="usname" id="usname"></td>
+                    <td><input type="text" name="usname" id="usname" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td><p id="invusna"></p></td>
                 </tr>
                 <tr>
                     <td><label for="paswd">Password</label></td>
                     <td></td>                    
-                    <td><input type="password" name="paswd" id="paswd"></td>
+                    <td><input type="password" name="paswd" id="paswd" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td><p id="invpsw"></p></td>
                 </tr>
                 <tr>
                     <td><label for="mbnum">Mobile</label></td>
                     <td></td>                    
-                    <td><input type="text" name="mbnum" id="mbnum"></td>
+                    <td><input type="text" name="mbnum" id="mbnum" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td><p id="invnum"></p></td>
                 </tr>
                 <tr>
                     <td><label for="email">Email</label></td>
                     <td></td>                    
-                    <td><input type="email" id="email" name="email" required></td>
+                    <td><input type="email" id="email" name="emai" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td><p id="invema"></p></td>
                 </tr>
                 <tr>
                     <td><label for="stuadres">Address</label></td>
                     <td></td>                    
-                    <td><textarea name="stuadres" id="stuadres" cols="25" rows="3"></textarea></td>
+                    <td><textarea name="stuadres" id="stuadres" cols="25" rows="3" autocomplete="off"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td><p id="invadr"></p></td>
                 </tr>
                 <tr>
                     <td><label for="clg">College</label></td>
                     <td>&nbsp;</td>                    
-                    <td><select name="clg" id="clg">
+                    <td><select name="clg" id="clgse">
+                        <option value=""></option>
                         <option value="thiy">Thiyagarajar College</option>
                         <option value="mdu">Madura College</option>
                         <option value="amer">American College</option>
                     </select></td>
                 </tr>
-                <tr></tr>
+                <tr>
+                    <td></td><td></td><td><p id="invsel"></p></td>
+                </tr>
                 <tr></tr>
                 <tr></tr>
                 <tr></tr>
@@ -95,10 +119,11 @@
                 <tr>
                     <td></td>
                     <td></td>
-                    <td><input type="submit" value="update" id="submit">&nbsp;&nbsp;&nbsp;
+                    <td><input type="button" value="update" id="submit" onclick="stuuppro()">&nbsp;&nbsp;&nbsp;
                     <input type="reset" value="reset" id="reset"></td>
                 </tr>
             </table>
         </form>
+        <script src="D:\Naveen\HTML-code-with-CSS\stulog_updpro.js"></script>
     </body>
 </html>
