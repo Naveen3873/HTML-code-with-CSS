@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>C2C Learning System</title>
-        <link rel="stylesheet" href="D:\Naveen\Day 10\Project\clglogffed.css" type="text/css">
+        <link rel="stylesheet" href="D:\Naveen\HTML-code-with-CSS\clglogffed.css" type="text/css">
     </head>
     <body bgcolor="00FFC4">
         <table width="100%" bgcolor="E6F656">
@@ -16,9 +16,9 @@
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\home.html">Home</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\login.html">Login</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\register.html">Register</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\home.html">Home</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\login.html">Login</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\register.html">Register</a></h2></td>
                 <td><h2><a href="about">About Us</a></h2></td>
                 <td><h2><a href="contact">Contact Us</a></h2></td>
                 <td></td><td></td><td></td><td></td><td></td>
@@ -32,8 +32,8 @@
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                 <td colspan="50">
-                    <a href="D:\Naveen\Day 10\Project\clglogin.html">back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="D:\Naveen\Day 10\Project\login.html">Logout</a></td>
+                    <a href="D:\Naveen\HTML-code-with-CSS\clglogin.html">back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="D:\Naveen\HTML-code-with-CSS\login.html">Logout</a></td>
             </tr>
         </table>
 
@@ -43,23 +43,26 @@
             </tr>
         </table>
         
-        <form>
+        <form id="fedbck" name="fedbck">
             <table width="30%" align="center">
                 <tr>
-                    <td><label for="fdbck"><font color="000000">Please submit your feedback(Maximum length 450 charachters only):</font></label></td>
+                    <td><label for="feddbck"><font color="000000">Please submit your feedback(Maximum length 450 charachters only):</font></label></td>
                 </tr>
                 <tr>
                     <td><textarea name="fdbck" id="fdbck" cols="70" rows="10" maxlength="450"></textarea></td>
                 </tr>
-                <tr></tr>
+                <tr>
+                    <td><p id="invmsg"></p></td>
+                </tr>
                 <tr></tr>    
                 <tr></tr>
                 <tr>
                     
-                    <td><button id="submit ">submit feedback</button>
+                    <td><input type="button" value="submit feedback" id="subm" onclick="submitfeed()">
                     <input type="reset" value="reset"></td>
                 </tr>
             </table>
         </form>
+        <script src="D:\Naveen\HTML-code-with-CSS\clglog_feedback.js"></script>
     </body>
 </html>
