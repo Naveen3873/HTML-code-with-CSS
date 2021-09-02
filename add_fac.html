@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>C2C Learning System</title>
-        <link rel="stylesheet" href="D:\Naveen\Day 10\Project\clglogfacmanaddfac.css" type="text/css">
+        <link rel="stylesheet" href="D:\Naveen\HTML-code-with-CSS\clglogfacmanaddfac.css" type="text/css">
     </head>
     <body bgcolor="00FFC4">
         <table width="100%" bgcolor="E6F656">
@@ -16,9 +16,9 @@
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\home.html">Home</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\login.html">Login</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\register.html">Register</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\home.html">Home</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\login.html">Login</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\register.html">Register</a></h2></td>
                 <td><h2><a href="about">About Us</a></h2></td>
                 <td><h2><a href="contact">Contact Us</a></h2></td>
                 <td></td><td></td><td></td><td></td><td></td>
@@ -32,8 +32,8 @@
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                 <td colspan="50">
-                    <a href="D:\Naveen\Day 10\Project\clglogin.html">back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="D:\Naveen\Day 10\Project\login.html">Logout</a></td>
+                    <a href="D:\Naveen\HTML-code-with-CSS\clglogin.html">back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="D:\Naveen\HTML-code-with-CSS\login.html">Logout</a></td>
             </tr>
         </table>
 
@@ -43,31 +43,48 @@
             </tr>
         </table>
         
+        <form name="addfac" autocomplete = "off">
         <table width="25%" align="center">
             <tr>
                 <td><label for="facname">Faculty Name</label></td>
-                <td><input type="text" name="facname" id="facname"></td>
+                <td><input type="text" name="facnam" id="facname" autocomplete="off" spellcheck="false"></td>
+            </tr>
+            <tr>
+                <td></td><td><p id="nameinv"></p></td>
             </tr>
             <tr>
                 <td><label for="quali">Qualification</label></td>
-                <td><input type="text" name="quali" id="quali"></td>
+                <td><input type="text" name="quali" id="quali" autocomplete="off" spellcheck="false"></td>
+            </tr>
+            <tr>
+                <td></td><td><p id="quinv"></p></td>
             </tr>
             <tr>
                 <td><label for="exper">Experience</label></td>
-                <td><input type="text" name="exper" id="exper"></td>
+                <td><input type="text" name="exper" id="exper" autocomplete="off" spellcheck="false"></td>
+            </tr>
+            <tr>
+                <td></td><td><p id="exinv"></p></td>
             </tr>
             <tr>
                 <td><label for="skill">Skill set</label></td>
-                <td><input type="text" name="skill" name="skill"></td>
+                <td><input type="text" id="skil" name="skill" placeholder="optinal" autocomplete="off" spellcheck="false"></td>
+            </tr>
+            <tr>
+                <td></td><td><p id="skinv"></p></td>
             </tr>
             <tr></tr>
             <tr></tr>
             <tr></tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;
-                <input type="reset" value="reset"></td>
+                <td><input type="button" onclick="forval()" value="submit" id="login" class="btn"/><input type="reset" value="reset"></td>
             </tr>
         </table>
+        </form>
+
+        <script src="D:\Naveen\HTML-code-with-CSS\clglog_addfac.js">
+
+        </script>
     </body>
 </html>    
