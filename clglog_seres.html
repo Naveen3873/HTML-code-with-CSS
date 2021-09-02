@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>C2C Learning System</title>
-        <link rel="stylesheet" href="D:\Naveen\Day 10\Project\clglogseres.css" type="text/css">
+        <link rel="stylesheet" href="D:\Naveen\HTML-code-with-CSS\clglogseres.css" type="text/css">
     </head>
     <body bgcolor="00FFC4">
         <table width="100%" bgcolor="E6F656">
@@ -16,9 +16,9 @@
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\home.html">Home</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\login.html">Login</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\register.html">Register</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\home.html">Home</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\login.html">Login</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\register.html">Register</a></h2></td>
                 <td><h2><a href="about">About Us</a></h2></td>
                 <td><h2><a href="contact">Contact Us</a></h2></td>
                 <td></td><td></td><td></td><td></td><td></td>
@@ -32,8 +32,8 @@
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                 <td colspan="50">
-                    <a href="D:\Naveen\Day 10\Project\clglogin.html">back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="D:\Naveen\Day 10\Project\login.html">Logout</a></td>
+                    <a href="D:\Naveen\HTML-code-with-CSS\clglogin.html">back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="D:\Naveen\HTML-code-with-CSS\login.html">Logout</a></td>
             </tr>
         </table>
 
@@ -43,26 +43,38 @@
             </tr>
         </table>
         
+        <form id="seres" name="seres" action="#" onsubmit="#">
         <table width=25% align="center">
             <tr>
                 <td><label for="clgid">College id</label></td>
-                <td><input type="text" id="clgid" name="clgid"></td>
+                <td><input type="text" id="clgid" name="clgid" autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td></td><td><p id="invid"></p></td>
             </tr>
             <tr>
                 <td><label for="clgname">College Name</label></td>
-                <td><input type="text" id="clgname" name="clgname"></td>
+                <td><input type="text" id="clgname" name="clgname" autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td></td><td><p id="invname"></p></td>
             </tr>
             <tr>
                 <td>Send Responses</td>
-                <td><textarea name="response" id="respo" cols="30" rows="5"></textarea></td>
+                <td><textarea name="response" id="respo" cols="30" rows="5" autocomplete="off"></textarea></td>
+            </tr>
+            <tr>
+                <td></td><td><p id="invmsg"></p></td>
             </tr>
             <tr></tr>
             <tr></tr>
             <tr></tr>
             <tr>
                 <td></td>
-                <td><button id="submit">send</button></td>
+                <td><input type="button" value="send" id="send" onclick="sere()"/></td>
             </tr>
         </table>
+        </form>
+        <script src="D:\Naveen\HTML-code-with-CSS\clglog_seres.js"></script>
     </body>
 </html>
