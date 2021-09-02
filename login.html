@@ -2,7 +2,13 @@
 <html>
     <head>
         <title>login page</title>
-        <link rel="stylesheet" href="D:\Naveen\Day 10\Project\loginstyle.css" type="text/css">
+        <link rel="stylesheet" href="D:\Naveen\HTML-code-with-CSS\loginstyle.css" type="text/css">
+        <style>
+            p {
+                background-color: white;
+                color: red;
+            }
+        </style>
     </head>
     <body bgcolor="00FFC4">
         <table width="100%" bgcolor="E6F656">
@@ -16,9 +22,9 @@
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\home.html">Home</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\login.html">Login</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\register.html">Register</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\home.html">Home</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\login.html">Login</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\register.html">Register</a></h2></td>
                 <td><h2><a href="about">About Us</a></h2></td>
                 <td><h2><a href="contact">Contact Us</a></h2></td>
                 <td></td><td></td><td></td><td></td><td></td>
@@ -29,18 +35,18 @@
         
         
         <p><div id="admlog">
-        <form class="loginrad">
+        <form class="loginrad" autocomplete="off"> <!-- radio button and input form -->
             <table width="100%" align="center">
                 <tr>
-                    <th colspan="70"><label for="login"><h3>Login</h3></label></th>
+                    <th colspan="70"><h3 id="loghead">Admin Login</h3></label></th>
                     <th></th><th></th><th></th><th></th>
                 </tr>
                 <tr>
                     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                     <td>
-                        <input type="radio" id="login" name="adlogin" value="admin" checked/>Admin
-                        <input type="radio" id="login" name="adlogin" value="college"/>College
-                        <input type="radio" id="login" name="adlogin" value="student"/>Student
+                        <input type="radio" id="adlogin" name="login" value="admin" onclick="adlog()" checked/>Admin
+                        <input type="radio" id="cllogin" name="login" value="college" onclick="cllog()"/>College
+                        <input type="radio" id="stlogin" name="login" value="student" onclick="stlog()"/>Student
                     </td>
                     <td></td>
                 </tr>
@@ -53,23 +59,37 @@
                 <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
                 <tr>
                     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    <td><label class="f1" for="username">User Name</label></td>
-                    <td><input type="text" name="username" id="username"></td>
+                    <td><label class="f1" for="usname">User Name</label></td>
+                    <td><input type="text" name="username" id="username" autocomplete="off" spellcheck="false"><br>
+                    
                 </tr>
                 <tr>
                     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    <td><label class="f1" for="password">Password:</label></td>
-                    <td><input type="password" name="password" id="password"></td>
+                    <td></td><td><p id="invuname"></p></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    <td><label class="f1" for="pswd">Password:</label></td>
+                    <td><input type="password" name="password" id="password" required><br>
+                    
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    <td></td><td><p id="invpsw"></p></td>
                 </tr>
                 <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
                 <tr>
                     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    <td><button id="button" class="btn"><a href="D:\Naveen\Day 10\Project\adminlogin.html">login</a></button>&nbsp;&nbsp;&nbsp;
+                    <td><input type="button" value="login" id="login" class="btn" onclick="log()"/>&nbsp;&nbsp;&nbsp;
                         <input id="reset" type="reset" value="reset">
                     </td>
                 </tr>
+            </form>
             </table>
         </form>
         </div>
+        <script src="D:\Naveen\HTML-code-with-CSS\login.js">
+
+        </script>
 </body>
  </html>
