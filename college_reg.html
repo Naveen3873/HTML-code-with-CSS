@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>C2C Learning System</title>
-        <link rel="stylesheet" href="D:\Naveen\Day 10\Project\regclg.css" type="text/css">
+        <link rel="stylesheet" href="D:\Naveen\HTML-code-with-CSS\regclg.css" type="text/css">
     </head>
     <body bgcolor="00FFC4">
         <table width="100%" bgcolor="E6F656">
@@ -16,9 +16,9 @@
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\home.html">Home</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\login.html">Login</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\register.html">Register</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\home.html">Home</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\login.html">Login</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\register.html">Register</a></h2></td>
                 <td><h2><a href="about">About Us</a></h2></td>
                 <td><h2><a href="contact">Contact Us</a></h2></td>
                 <td></td><td></td><td></td><td></td><td></td>
@@ -33,38 +33,52 @@
         </table>
         
         
-        <form>
+        <form id="srre" name="clgregi">
             <table id="clgreg" width=25% align="center">
                 <tr>
                     <td><label for="clgname">College Name</label></td>
-                    <td><input type="text" id="clgname" name="clgname" ></td>
+                    <td><input type="text" id="clgname" name="clgname" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td><p id="invclna"></p></td>
                 </tr>
                 <tr>
                     <td><label for="username">User Name</label></td>
-                    <td><input type="text" id="username" name="username"></td>
+                    <td><input type="text" id="username" name="username"autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td><p id="invuna"></p></td>
                 </tr>
                 <tr>
                     <td><label for="password">Password</label></td>
-                    <td><input type="password" id="password" name="password"></td>
+                    <td><input type="password" id="password" name="password" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td><p id="invpsw"></p></td>
                 </tr>
                 <tr>
                     <td><label for="clgadd">College Postal Address</label></td>
-                    <td><textarea name="clgadd" id="clgadd"></textarea></td>
+                    <td><textarea name="clgadd" id="clgadd" autocomplete="off"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td><td><p id="invadd"></p></td>
                 </tr>
                 <tr>
                     <td><label for="phnum">College Phone Number</label></td>
-                    <td><input type="tel" name="phnum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td>
+                    <td><input type="tel" name="phnum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" autocomplete="off"></td>
                 </tr>
-                <tr></tr>
+                <tr>
+                    <td></td><td><p id="invnum"></p></td>
+                </tr>
                 <tr></tr>
                 <tr></tr>
                 <tr>
                     <td></td>
-                    <td><input type="submit" value="submit" id="submit">&nbsp;&nbsp;&nbsp;
+                    <td><input type="button" value="submit" id="submit" onclick="clgreg()">&nbsp;&nbsp;&nbsp;
                         <input type="reset" value="reset"></td>
                 </tr>
         </table>
         </form>
-        
+    <script src="D:\Naveen\HTML-code-with-CSS\college_reg.js"></script>
     </body>
 </html>
