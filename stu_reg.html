@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>C2C Learning System</title>
-        <link rel="stylesheet" href="D:\Naveen\Day 10\Project\regstureg.css" type="text/css">
+        <link rel="stylesheet" href="D:\Naveen\HTML-code-with-CSS\regstureg.css" type="text/css">
     </head>
     <body bgcolor="00FFC4">
         <table width="100%" bgcolor="E6F656">
@@ -16,9 +16,9 @@
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\home.html">Home</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\login.html">Login</a></h2></td>
-                <td><h2><a href="D:\Naveen\Day 10\Project\register.html">Register</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\home.html">Home</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\login.html">Login</a></h2></td>
+                <td><h2><a href="D:\Naveen\HTML-code-with-CSS\register.html">Register</a></h2></td>
                 <td><h2><a href="about">About Us</a></h2></td>
                 <td><h2><a href="contact">Contact Us</a></h2></td>
                 <td></td><td></td><td></td><td></td><td></td>
@@ -33,40 +33,61 @@
         </table>
         
         <br>
-        <form>
+        <form id="sturegi" name="stureg">
             <table width="25%" align="center">
                 <tr>
                     <td><label id="firstname">First Name</label></td>
-                    <td><input type="text" name="firstname" id="firstname"></td>
+                    <td><input type="text" name="firstname" id="firstname" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td><p id="invna"></p></td>
                 </tr>
                 <tr>
                     <td><label for="lname">Last Name</label></td>
-                    <td><input type="text" name="lname" id="lname"></td>
+                    <td><input type="text" name="lname" id="lname" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td><p id="invnam"></p></td>
                 </tr>
                 <tr>
                     <td><label for="username">User Name</label></td>
-                    <td><input type="text" name="uname" id="username"></td>
+                    <td><input type="text" name="uname" id="username" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td><p id="unam"></p></td>
                 </tr>
                 <tr>
                     <td><label for="psw">Password</label></td>
-                    <td><input type="password" name="password" id="psw"></td>
+                    <td><input type="password" name="password" id="psw" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td><p id="invpsw"></p></td>
                 </tr>
                 <tr>
                     <td><label for="mobnum">Mobile Number</label></td>
-                    <td><input type="text" name="mobnum" id="mobnum"></td>
+                    <td><input type="text" name="mobnum" id="mobnum" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td><p id="invnum"></p></td>
                 </tr>
                 <tr>
                     <td><label for="email">Email</label></td>
-                    <td><input type="email" name="email" id="email" required></td>
+                    <td><input type="email" name="email" id="email" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td><td><p id="invem"></p></td>
                 </tr>
                 <tr>
                     <td><label for="address">Address</label></td>
-                    <td><textarea name="address" id="address" rows="4"></textarea></td>
+                    <td><textarea name="address" id="address" rows="4" autocomplete="off"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td><td><p id="invadd"></p></td>
                 </tr>
                 <tr>
                     <td><label for="college">College</label></td>
-                    <td><select name="college" id="college">
-                        <option>Select</option>
+                    <td><select name="college" id="coleg">
+                        <option value=""></option>
                         <option value="american clg">The American College</option>
                         <option value="mdu clg">The Madura College</option>
                         <option value="kmu">The Kamarajar University</option>
@@ -74,18 +95,21 @@
                         <option value="mgy clg">Mangayarkarasi College</option>
                     </select></td>
                 </tr>
-                <tr></tr>
+                <tr>
+                    <td></td><td><p id="invsele"></p></td>
+                </tr>
                 <tr></tr>
                 <tr></tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input type="submit" value="submit" id="submit">
+                        <input type="button" value="submit" id="submit" onclick="studentreg()">
                         <input type="reset" value="reset" id="submit">
                     </td>
                 </tr>
 
             </table>
         </form>
+        <script src="D:\Naveen\HTML-code-with-CSS\stu_reg.js"></script>
     </body>
 </html>    
