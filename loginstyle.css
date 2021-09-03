@@ -178,6 +178,6 @@ h1 {
     }
   }
 
-.loginrad{
-    
+#invuname , #invpsw {
+    color: red;
 }
