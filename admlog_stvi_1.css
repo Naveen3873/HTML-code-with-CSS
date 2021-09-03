@@ -86,3 +86,9 @@ button{
 #balog a{
     font: black;
 }
+form a:hover{
+    background-color: #1e90ff;
+    color: black;
+    cursor: pointer;
+    font-size:100%;
+}
