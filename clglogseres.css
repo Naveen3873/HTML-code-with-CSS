@@ -132,7 +132,7 @@ input[type=text],input[type=password],input[type=tel]{
     border-radius: 4px;
     box-sizing: border-box;
 }
-button{
+input[type=button]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -144,7 +144,7 @@ button{
     color:white;
     cursor: pointer;
 }
-button:hover{
+input[type=button]:hover{
    font-size: large;
 }
 input[type=reset]:hover{

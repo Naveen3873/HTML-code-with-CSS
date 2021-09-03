@@ -63,7 +63,7 @@ input[type=text],input[type=password],input[type=tel],input[type=email],textarea
     border-radius: 4px;
     box-sizing: border-box;
 }
-input[type=submit], input[type=reset]{
+input[type=button], input[type=reset]{
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -75,7 +75,7 @@ input[type=submit], input[type=reset]{
     color:white;
     cursor: pointer;
 }
-input[type=submit]:hover{
+input[type=button]:hover{
    font-size: large;
 }
 input[type=reset]:hover{
